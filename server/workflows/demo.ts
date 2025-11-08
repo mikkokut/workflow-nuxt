@@ -1,7 +1,9 @@
-import say from "../utils/say";
+import say from "../../server/utils/say";
 
 export async function demo() {
   "use workflow";
+
+  say('Hello from workflow');
 
   await step();
 }
@@ -9,5 +11,5 @@ export async function demo() {
 export async function step() {
   "use step";
 
-  say();
+  say('Hello from step');
 }

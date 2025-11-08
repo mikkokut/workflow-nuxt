@@ -1,75 +1,24 @@
-# Nuxt Minimal Starter
+# Nuxt + Workflow
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Reproduction of the inability to utilize shared typescript code in Workflow files.
 
-## Setup
 
-Make sure to install dependencies:
+## Install dependencies
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Run the development server
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm run dev
 ```
 
-## Production
+## Start workflow
 
-Build the application for production:
+Navigate to `http://localhost:3000/api/test`. Instead of "Demo workflow started", you see error:
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+Unknown file extension ".ts" for /code/research/workflow-nuxt/server/utils/say.ts
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

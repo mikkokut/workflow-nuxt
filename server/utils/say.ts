@@ -1,3 +1,3 @@
-export default function say() {
-  console.log('hello world');
+export default function say(message: string) {
+  console.log(message);
 }
